@@ -203,6 +203,21 @@ scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3);
 scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0);
 scene3.to("#bg2-grad", { attr: { r: 500 } }, 0);
 
+gsap.fromTo(
+  "#night-message",
+  { opacity: 0, y: 20 },
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".scrollElement",
+      start: "75% top",
+      end: "92% top",
+      scrub: 2,
+    },
+  }
+);
+
 /*   falling star   */
 gsap.to("#fstar", {
   x: -700,

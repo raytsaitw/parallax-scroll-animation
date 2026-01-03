@@ -25,6 +25,32 @@ svg {
   left: 0;
 }
 
+.overlay-text {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+.welcome-text {
+  top: 8%;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+}
+
+.night-text {
+  top: 18%;
+  max-width: min(80vw, 720px);
+  font-size: clamp(1rem, 2.6vw, 1.8rem);
+  line-height: 1.6;
+  opacity: 0;
+}
+
 .scrollElement {
   position: absolute;
   height: 6000px;
