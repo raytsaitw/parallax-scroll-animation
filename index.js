@@ -234,10 +234,10 @@ fsEnter.addEventListener("click", function (e) {
   if (!fullscreen) {
     fullscreen = true;
     document.documentElement.requestFullscreen();
-    fsEnter.innerHTML = "Exit Fullscreen";
+    fsEnter.innerHTML = "離開全螢幕";
   } else {
     fullscreen = false;
     document.exitFullscreen();
-    fsEnter.innerHTML = "Go Fullscreen";
+    fsEnter.innerHTML = "進入全螢幕";
   }
 });
