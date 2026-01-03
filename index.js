@@ -198,6 +198,7 @@ scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0);
 // Scroll Back text
 scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25);
 scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3);
+scene3.fromTo("#night-message", { opacity: 0 }, { opacity: 1, y: -500 }, 0.2);
 
 //gradient value change
 scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0);
